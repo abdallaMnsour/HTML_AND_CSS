@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- My Framework -->
+  <link rel="stylesheet" href="css/framework.css">
+  <!-- Main File Style -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+  <title>Settings</title>
+</head>
+<body>
+  <div class="page d-flex">
+
+    <div class="sidebar bg-white p-20 p-relative">
+      <h3 class="p-relative txt-c mt-0">Elzero</h3>
+      <ul class="l-style-n p-0 m-0 d-flex">
+
+        <li title="Dashboard">
+          <a href="index.html" class="d-flex align-center fs-14 c-black rad-6 p-10">
+            <i class="fa-regular fa-chart-bar fa-fw"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+
+        <li title="Settings">
+          <a href="settings.html" class="active d-flex align-center fs-14 c-black rad-6 p-10">
+            <i class="fa-solid fa-gear fa-fw"></i>
+            <span>Settings</span>
+          </a>
+        </li>
+
+        <li title="Profile">
+          <a href="profile.html" class="d-flex align-center fs-14 c-black rad-6 p-10">
+            <i class="fa-regular fa-user fa-fw"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+
+        <li title="Projects">
+          <a href="projects.html" class="d-flex align-center fs-14 c-black rad-6 p-10">
+            <i class="fa-solid fa-diagram-project fa-fw"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+
+        <li title="Courses">
+          <a href="courses.html" class="d-flex align-center fs-14 c-black rad-6 p-10">
+            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+            <span>Courses</span>
+          </a>
+        </li>
+
+        <li title="Friends">
+          <a href="friends.html" class="d-flex align-center fs-14 c-black rad-6 p-10">
+            <i class="fa-regular fa-circle-user fa-fw"></i>
+            <span>Friends</span>
+          </a>
+        </li>
+
+        <li title="Files">
+          <a href="files.html" class="d-flex align-center fs-14 c-black rad-6 p-10">
+            <i class="fa-regular fa-file fa-fw"></i>
+            <span>Files</span>
+          </a>
+        </li>
+
+        <li title="Plans">
+          <a href="plans.html" class="d-flex align-center fs-14 c-black rad-6 p-10">
+            <i class="fa-regular fa-credit-card fa-fw"></i>
+            <span>Plans</span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="content w-full">
+      <!-- Start Header -->
+      <header class="bg-white p-15 between-flex">
+        <div class="search p-relative">
+          <input class="p-10" type="search" name="search" placeholder="Type A Keyword">
+        </div>
+        <div class="icons d-flex align-center">
+          <span class="notification p-relative">
+            <i class="fa-regular fa-bell fa-lg"></i>
+          </span>
+          <img src="images/avatar.png" alt="image" />
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <h1 class="p-relative">Settings</h1>
+
+      <div class="wrapper d-grid gap-20">
+
+        <!-- Start Site Control -->
+        <div class="site-control p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-10">Site Control</h2>
+          <p class="c-grey fs-14 mb-20">Control The Website If There Is Maintenance</p>
+          <div class="control d-flex between-flex mb-20">
+            <div class="text">
+              <span>Website Control</span>
+              <p class="mt-5 mb-10 fs-14 c-grey">Open/Close Website And Type The Reason</p>
+            </div>
+
+            <label>
+              <input class="toggle-checkbox" type="checkbox" name="site" checked>
+              <div class="toggle-switch"></div>
+            </label>
+          </div>
+          <textarea class="w-full p-10 rad-6 " placeholder="Close message content" name="message-close"></textarea>
+        </div>
+        <!-- End Site Control -->
+
+        <!-- Start General Info -->
+        <div class="general-info p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-10">General Info</h2>
+          <p class="mb-20 c-grey">General Information About Your Account</p>
+          <form action="">
+            <label>
+              <p class="mb-10 mt-20 c-grey fs-14">First Name</p>
+              <input class="p-10 rad-6" type="text" placeholder="First Name">
+            </label>
+            <label>
+              <p class="mb-10 mt-20 c-grey fs-14">Last Name</p>
+              <input class="p-10 rad-6" type="text" placeholder="Last Name">
+            </label>
+            <label>
+              <p class="mb-10 mt-20 c-grey fs-14">Email</p>
+              <div class="w-full d-flex center-flex">
+                <input class="p-10 rad-6 mr-10" type="email" disabled value="bodemansor8@gmail.com" placeholder="E-mail">
+                <a href="#" class="c-blue">Change</a>
+              </div>
+            </label>
+          </form>
+        </div>
+        <!-- End General Info -->
+
+        <!-- Start Security Info -->
+        <div class="security-info p-20 bg-white rad-10">
+          <h2 class="mb-10 mt-0">Security Info</h2>
+          <p class="c-grey mb-20">Security Information About Your Account</p>
+
+          <div class="box between-flex pb-10 mb-10 border-b-ccc">
+            <div class="text">
+              <span>Password</span>
+              <p class="c-grey fs-14 mt-5 mb-10">Last Change On 25/10/2021</p>
+            </div>
+            <a href="#" class="btn-shape bg-blue c-white">Change</a>
+          </div>
+
+          <div class="box between-flex pb-10 mb-10 border-b-ccc">
+            <div class="text">
+              <span>Two-Factor Authentication</span>
+              <p class="c-grey fs-14 mt-5 mb-10">Enable/Disable The Feature</p>
+            </div>
+            <label>
+              <input type="checkbox" name="" id="" class="toggle-checkbox" checked>
+              <div class="toggle-switch"></div>
+            </label>
+          </div>
+
+          <div class="box between-flex mb-0">
+            <div class="text">
+              <span>Devices</span>
+              <p class="c-grey fs-14 mt-5 mb-10">Check The Login Devices List</p>
+            </div>
+            <a href="#" class="bg-eee btn-shape c-black">Devices</a>
+          </div>
+
+        </div>
+        <!-- End Security Info -->
+
+        <!-- Start Backup Manager -->
+        <div class="backup-manager p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-10">Backup Manager</h2>
+          <p class="mb-20 c-grey">Control Backup Time And Location</p>
+          <form action="" class="time border-b-ccc mb-10">
+
+            <input type="radio" name="time" id="daily">
+            <label class="mb-15" for="daily">Daily</label>
+
+            <input type="radio" name="time" id="weekly">
+            <label class="mb-15" for="weekly">Weekly</label>
+
+            <input type="radio" name="time" id="monthly" checked>
+            <label class="mb-15" for="monthly">Monthly</label>
+
+          </form>
+          <form action="" class="servers d-flex ">
+
+            <input type="radio" name="server" id="megaman">
+            <label for="megaman">
+              <i class="fa-solid fa-server d-block mb-10"></i> 
+              Megaman
+            </label>
+
+            <input type="radio" name="server" id="zero">
+            <label for="zero">
+              <i class="fa-solid fa-server d-block mb-10"></i>
+              Zero
+            </label>
+
+            <input type="radio" name="server" id="sigma">
+            <label for="sigma">
+              <i class="fa-solid fa-server d-block mb-10"></i>
+              Sigma
+            </label>
+
+          </form>
+        </div>
+        <!-- End Backup Manager -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
